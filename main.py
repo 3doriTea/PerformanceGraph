@@ -2,7 +2,7 @@ import csv
 import matplotlib.pyplot as plt
 import matplotlib_fontja
 
-# plt.rcParams["font.family"] = "MS Gothic"
+plt.rcParams["font.family"] = "IPAexGothic"
 
 def plot_data(file_name : str, color : str, label : str):
     fps_data : list[int] = []
