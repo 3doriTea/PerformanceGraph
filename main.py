@@ -4,7 +4,10 @@ import matplotlib_fontja
 
 plt.rcParams["font.family"] = "IPAexGothic"
 
-def plot_data(file_name : str, color : str, label : str):
+def plot_data(file_name : str, color : str, label : str) -> None:
+    """
+    CSVデータをプロットする関数
+    """
     fps_data : list[int] = []
     sphere_count_data : list[int] = []
 
@@ -22,8 +25,10 @@ plt.xlabel("球体の個数")
 plt.ylabel("FPS")
 plt.ylim(0, 60)
 plt.grid()
-plt.legend(bbox_to_anchor=(1, 1), loc="upper right", borderaxespad=0, fontsize=18)
-plot_data("./SGBPerformanceOnRelease.csv", color="blue", label="自作ゲームベース")
-plot_data("./GBDX11PerformanceOnRelease.csv", color="green", label="学校ゲームベース")
 
+plot_data("./data/SGBPerformanceOnRelease.csv", color="blue", label="自作ゲームベース")
+plot_data("./data/GBDX11PerformanceOnRelease.csv", color="green", label="学校ゲームベース")
+
+plt.legend()
+#bbox_to_anchor=(0, 0), loc="upper right", borderaxespad=0, fontsize=18
 plt.show()
