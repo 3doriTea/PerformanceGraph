@@ -39,6 +39,7 @@
 ![結果の画像](image/ResultGraph.png)
 
 
+
 ### 計測中の様子
 
 #### 学校ゲームベース
@@ -48,10 +49,6 @@
 ![3fps](image/GBDX11-3fps.png)
 
 #### 自作ゲームベース
-
-![59fps](image/GBDX11-59fps.png)
-![14fps](image/GBDX11-14fps.png)
-![3fps](image/GBDX11-3fps.png)
 
 ![59fps](image/SGB-59fps.png)
 ![46fps](image/SGB-46fps.png)
